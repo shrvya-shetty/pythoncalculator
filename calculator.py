@@ -1,10 +1,19 @@
 print("This is a Calculator")
 
-a = int(input())
-b = int(input())
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
 
-# toshi will add addition part
+print("Select operation:") #performing only two operations .
+print("1. Addition")
+print("2. Subtraction")
 
+choice = input("Enter choice (1 or 2): ")
 
-
-# rushabh will add substraction part
+if choice == '1':
+    result = a + b
+    print("Result:", a, "+", b, "=", result)
+elif choice == '2':
+    result = a - b
+    print("Result:", a, "-", b, "=", result)
+else:
+    print("Invalid choice")
